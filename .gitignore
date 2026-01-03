@@ -241,6 +241,7 @@ ENV/
 data/
 outputs/
 results/
+docs/
 
 # =========================
 # LOGS
