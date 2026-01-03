@@ -205,3 +205,84 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# =========================
+# ENV & SECRETS (CRITICAL)
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+
+# =========================
+# JUPYTER
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# DATA / OUTPUT (if added later)
+# =========================
+data/
+outputs/
+results/
+
+# =========================
+# LOGS
+# =========================
+logs/
+*.log
+
+# =========================
+# OS FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / EDITOR
+# =========================
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# CACHE / TEMP
+# =========================
+.cache/
+.tmp/
+
+# =========================
+# MODEL / TOKEN FILES (Future Safety)
+# =========================
+*.ckpt
+*.bin
+*.model
+
+# =========================
+# PYTHON BUILD
+# =========================
+build/
+dist/
+
+# =========================
+# NOTE:
+# notebooks/*.ipynb ARE TRACKED
+# prompts/*.txt ARE TRACKED
+# docs/*.md ARE TRACKED
+# =========================
