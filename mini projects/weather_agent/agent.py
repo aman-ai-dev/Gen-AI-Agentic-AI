@@ -1,6 +1,7 @@
 from google import genai
 from dotenv import load_dotenv
 import os
+from duckduckgo_search import DDGS
 import json
 import requests
 
@@ -38,6 +39,7 @@ JSON FORMAT:
 
 Available tool:
 - get_weather(city: str)
+- web_search(query: str)
 
 When tool output is provided, continue planning and then produce OUTPUT.
 """
@@ -50,8 +52,26 @@ def get_weather(city: str):
         return f"The weather of {city} is {r.text}"
     return "Weather service error"
 
+# def web_search(query: str):
+#     url = f"https://duckduckgo.com/html/?q={query}"
+#     r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
+#     if r.status_code == 200:
+#         return f"Search results page fetched for query: {query}"
+#     return "Web search service error"
+
+def web_search(query: str):
+    try:
+        with DDGS() as ddgs:
+            results = ddgs.text(query, max_results=3)
+        formatted = "\n".join([f"- {r['title']}: {r['body'][:100]}... ({r['href']})" for r in results])
+        return f"Search results for '{query}':\n{formatted}"
+    except Exception as e:
+        return f"Web search error: {str(e)}"
+
+
 TOOLS = {
-    "get_weather": get_weather
+    "get_weather": get_weather,
+    "web_search": web_search
 }
 
 # ------------------ CONVERSATION STATE ------------------
@@ -67,7 +87,7 @@ USER:
 # ------------------ AGENT LOOP ------------------
 while True:
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3-flash-preview",
         contents=history
     )
 
