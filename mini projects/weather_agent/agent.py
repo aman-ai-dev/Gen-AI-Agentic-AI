@@ -52,13 +52,6 @@ def get_weather(city: str):
         return f"The weather of {city} is {r.text}"
     return "Weather service error"
 
-# def web_search(query: str):
-#     url = f"https://duckduckgo.com/html/?q={query}"
-#     r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
-#     if r.status_code == 200:
-#         return f"Search results page fetched for query: {query}"
-#     return "Web search service error"
-
 def web_search(query: str):
     try:
         with DDGS() as ddgs:
