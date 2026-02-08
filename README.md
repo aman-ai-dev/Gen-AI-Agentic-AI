@@ -1,5 +1,3 @@
----
-
 # 🤖 Gen-AI & Agentic AI
 
 ## 📖 Overview
@@ -13,6 +11,8 @@ The repo includes:
 * Structured experiments
 * Prompt and LLM fundamentals
 * Notebook-based exploration
+
+---
 
 ## 📂 Repository Structure
 
@@ -71,11 +71,11 @@ Core learning modules and structured experiments.
 
 Follow these steps to set up and run the project:
 
-**1. Repository Clone Karein**
-GitHub se repo clone karein aur us folder ke andar jaayein.
+**1. Clone the Repository**
+Clone the repo from GitHub and navigate into the folder.
 
-**2. Virtual Environment Banao (Recommended)**
-Python ka virtual environment create karein taaki dependencies clean rahein.
+**2. Create a Virtual Environment (Recommended)**
+Create a Python virtual environment to keep dependencies clean.
 
 * **Windows users:**
 ```bash
@@ -92,19 +92,19 @@ source venv/bin/activate
 
 
 
-**3. Dependencies Install Karein**
-`requirements.txt` file se saari required libraries install karein.
+**3. Install Dependencies**
+Install all required libraries from the `requirements.txt` file.
 
 ```bash
 pip install -r requirements.txt
 
 ```
 
-**4. Notebooks Run Karna Ho**
-Jupyter Notebook start karein aur `notebooks` folder ke andar se koi bhi notebook open karke run karein.
+**4. To Run Notebooks**
+Start Jupyter Notebook, navigate to the `notebooks` folder, and open/run any notebook.
 
-**5. Mini Agent Projects Run Karna Ho**
-`mini_projects` ke andar jaayein, kisi bhi agent folder me jaakar `agent.py` file run karein.
+**5. To Run Mini Agent Projects**
+Navigate to `mini_projects`, enter any agent folder, and run the `agent.py` file.
 
 ```bash
 python mini_projects/weather_agent/agent.py
@@ -115,16 +115,14 @@ python mini_projects/weather_agent/agent.py
 
 ## 🚧 CURRENT STATUS
 
-> Ye repository **Agentic AI** seekhne aur experiment karne ke phase ko represent karti hai. Isme focus foundations strong karne par hai, production-ready system banana abhi next step hai.
+> This repository represents the **learning and experimentation phase** of Agentic AI. The focus is on strengthening foundations; building a production-ready system is the next step.
 
 ---
 
 ## 📅 PLANNED IMPROVEMENTS
 
-* [ ] Planner-based agent loop implement karna.
-* [ ] Tools ke liye proper abstraction banana.
-* [ ] Short-term aur long-term memory add karna.
-* [ ] Selected agents ko API based services me convert karna.
-* [ ] Multi-agent coordination explore karna.
-
----
+* [ ] Implement a planner-based agent loop.
+* [ ] Create proper abstraction for tools.
+* [ ] Add short-term and long-term memory.
+* [ ] Convert selected agents into API-based services.
+* [ ] Explore multi-agent coordination.
