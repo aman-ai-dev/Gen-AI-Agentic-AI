@@ -14,8 +14,6 @@ The repo includes:
 * Prompt and LLM fundamentals
 * Notebook-based exploration
 
----
-
 ## 📂 Repository Structure
 
 ### `mini_projects/`
