@@ -68,38 +68,37 @@ Core learning modules and structured experiments.
 
 ---
 
-HOW TO RUN
+## **HOW TO RUN**
 
-Sabse pehle repository clone karo
-GitHub se repo clone karo aur us folder ke andar jao.
+1. **Repository Clone Karein:**
+GitHub se repo clone karein aur us folder ke andar jaayein.
+2. **Virtual Environment Banao (Recommended):**
+Python ka virtual environment create karein taaki dependencies clean rahein.
+* **Windows users:** `venv\Scripts\activate`
+* **Linux / macOS users:** `source venv/bin/activate`
 
-Virtual environment banao (recommended)
-Python ka virtual environment create karo taaki dependencies clean rahein.
 
-Windows users:
-venv\Scripts\activate
+3. **Dependencies Install Karein:**
+`requirements.txt` file se saari required libraries install karein.
+4. **Notebooks Run Karna Ho:**
+Jupyter Notebook start karein aur `notebooks` folder ke andar se koi bhi notebook open karke run karein.
+5. **Mini Agent Projects Run Karna Ho:**
+`mini_projects` ke andar jaayein, kisi bhi agent folder me jaakar `agent.py` file run karein.
 
-Linux / macOS users:
-source venv/bin/activate
+---
 
-Dependencies install karo
-requirements.txt file se saari required libraries install karo.
+## **CURRENT STATUS**
 
-Notebooks run karna ho
-Jupyter Notebook start karo aur notebooks folder ke andar se koi bhi notebook open karke run karo.
+> Ye repository **Agentic AI** seekhne aur experiment karne ke phase ko represent karti hai. Isme focus foundations strong karne par hai, production-ready system banana abhi next step hai.
 
-Mini agent projects run karna ho
-mini_projects ke andar jao, kisi bhi agent folder me jaakar agent.py file run karo.
+---
 
-CURRENT STATUS
+## **PLANNED IMPROVEMENTS**
 
-Ye repository Agentic AI seekhne aur experiment karne ke phase ko represent karti hai.
-Isme focus foundations strong karne par hai, production-ready system banana abhi next step hai.
+* [ ] Planner-based agent loop implement karna.
+* [ ] Tools ke liye proper abstraction banana.
+* [ ] Short-term aur long-term memory add karna.
+* [ ] Selected agents ko API based services me convert karna.
+* [ ] Multi-agent coordination explore karna.
 
-PLANNED IMPROVEMENTS
-
-Aage chal ke planner-based agent loop implement karna
-Tools ke liye proper abstraction banana
-Short-term aur long-term memory add karna
-Selected agents ko API based services me convert karna
-Multi-agent coordination explore karna
+---
